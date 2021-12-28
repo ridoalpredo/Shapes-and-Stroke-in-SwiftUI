@@ -14,7 +14,11 @@ struct ContentView: View {
             Rectangle()
                 .foregroundColor(Color.blue)
                 .ignoresSafeArea()
+            
             VStack(alignment: .center, spacing: 8.0) {
+                
+                Home()
+                
                 Circle()
                     .stroke()
                 .frame(width: 40, height: 40)
@@ -37,5 +41,13 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct Home: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            .foregroundColor(Color.black)
+        
     }
 }
